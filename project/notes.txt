@@ -1,0 +1,23 @@
+
+to pick up where you left off, make changes to the code in android studio, or vim,
+run the compileAndDeploy.sh in the wildlife/ : )
+you may need to 
+adb kill-server
+adb start-server
+adb devices -l
+
+./gradlew clean
+---------------------------------------------------------
+# 1. Check for compilation errors only (fastest)
+./gradlew compileDebugKotlin
+
+# 2. Build the debug APK (skips tests for speed)
+./gradlew assembleDebug
+./gradlew assembleDebug --offline --daemon
+
+# 3. Install APK on the phone (replaces old one)
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+
+# 4. Launch the app on the device
+adb shell monkey -p com.example.jetchat 1
+

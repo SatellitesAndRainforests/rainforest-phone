@@ -1,0 +1,25 @@
+# Gradle / build outputs
+.gradle/
+**/build/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+out/
+
+# Local machine config
+local.properties
+
+# Artifacts
+*.apk
+*.aab
+*.log
+
+# Keys
+*.jks
+*.keystore
+
+.DS_Store
+*~
+*.swp
+
