@@ -1,0 +1,15 @@
+
+- wifi + hot spot on on phone, only hotspot on laptop (not usb wifi needed)
+
+ adb kill-server
+ adb start-server
+
+ adb pair <ip>:<port> <pair#> 
+ adb devices
+
+ adb connect 192.168.1.12:41351
+
+ adb devices
+ 
+ now can adb install -r app/.../app-debug.apk
+

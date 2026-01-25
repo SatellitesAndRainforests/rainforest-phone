@@ -85,6 +85,7 @@ android {
 }
 
 dependencies {
+    implementation("com.github.mik3y:usb-serial-for-android:v3.10.0")
     implementation("androidx.camera:camera-camera2:1.4.2")
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.camera.lifecycle)

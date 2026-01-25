@@ -43,5 +43,10 @@
             android:exported="false"
             android:foregroundServiceType="camera" />
 
+        <service
+            android:name=".usb.UsbSensorService"
+            android:exported="false"
+            android:foregroundServiceType="connectedDevice" />
+
     </application>
 </manifest>
